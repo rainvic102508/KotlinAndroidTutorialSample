@@ -1,10 +1,11 @@
 package com.youdude.kotlinandroidtutorialsample
 
-import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import androidx.navigation.findNavController
+import androidx.recyclerview.widget.RecyclerView
 
 
 import com.youdude.kotlinandroidtutorialsample.FeedFragment.OnListFragmentInteractionListener
@@ -41,23 +42,19 @@ class MyFeedRecyclerViewAdapter(
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val item = mValues[position]
-        holder.mIdView.text = item.id
-        holder.mContentView.text = item.content
-
-        with(holder.mView) {
-            tag = item
-            setOnClickListener(mOnClickListener)
-        }
+        holder.bind(item)
     }
 
     override fun getItemCount(): Int = mValues.size
 
     inner class ViewHolder(val mView: View) : RecyclerView.ViewHolder(mView) {
-        val mIdView: TextView = mView.item_number
-        val mContentView: TextView = mView.content
 
-        override fun toString(): String {
-            return super.toString() + " '" + mContentView.text + "'"
+        fun bind(item: DummyItem) = with(mView){
+            item_number.text = item.id
+            content.text = item.content
+            this.setOnClickListener {
+                it.findNavController().navigate(R.id.action_feedFragment_to_detailFragment)
+            }
         }
     }
 }
