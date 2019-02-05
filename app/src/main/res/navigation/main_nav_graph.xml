@@ -15,5 +15,7 @@
             android:id="@+id/detailFragment"
             android:name="com.youdude.kotlinandroidtutorialsample.DetailFragment"
             android:label="Blank"
-            tools:layout="@layout/fragment_detail" />
+            tools:layout="@layout/fragment_detail" >
+        <argument android:name="videoId" app:argType="string"/>
+    </fragment>
 </navigation>

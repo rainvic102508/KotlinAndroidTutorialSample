@@ -1,14 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-             xmlns:tools="http://schemas.android.com/tools"
-             android:layout_width="match_parent"
-             android:layout_height="match_parent"
-             tools:context=".DetailFragment">
-
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="@string/hello_blank_fragment"/>
+            tools:context=".DetailFragment">
+<androidx.constraintlayout.widget.ConstraintLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content">
 
-</FrameLayout>
+    <TextView
+            android:id="@+id/tv_destination"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum a felis eget tortor pulvinar lacinia a a sapien. Nulla a neque tristique, posuere tortor at, euismod ante. Duis porta, nibh id dapibus faucibus, massa est sagittis massa, eu fringilla ex lectus pulvinar nulla. Duis lacus arcu, vehicula nec dignissim nec, semper nec sapien. Morbi rhoncus ut lectus non tincidunt. Ut iaculis lacus id blandit finibus. Duis nec eleifend arcu. Proin faucibus, nisi sit amet hendrerit consectetur, tellus tortor sollicitudin lacus, quis rutrum purus sapien ac nisi. In hac habitasse platea dictumst. Cras eget dolor justo. Sed ullamcorper nibh nibh, vitae iaculis metus vestibulum a.
+
+Praesent vitae augue lacus. Nulla porttitor metus a ipsum vulputate porta. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean mollis feugiat odio at egestas. Nunc ultricies, ex non posuere sodales, lectus eros venenatis urna, id tristique ante mauris nec nulla. Cras lacinia sed risus in vestibulum. Curabitur malesuada augue sit amet est egestas eleifend. Etiam lectus metus, sollicitudin congue porttitor ut, luctus nec purus. Suspendisse condimentum nisi non lobortis venenatis. Donec vel faucibus felis, eget efficitur lorem. Sed nec metus vitae urna rhoncus tincidunt.
+
+Praesent laoreet enim lacus, id egestas mi rhoncus non. Praesent ut risus pellentesque, fringilla dolor a, fermentum leo. Sed lacinia maximus urna, eu facilisis leo egestas sit amet. Duis et bibendum dui. Nulla facilisi. Fusce ex sem, maximus ac velit at, commodo sodales massa. Nunc sagittis placerat convallis. Fusce volutpat nunc ac fermentum vulputate. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer tincidunt ante eu nunc maximus, ut placerat nunc luctus. Integer viverra dictum nulla id convallis. Fusce nec massa a lectus tempor eleifend. Sed non libero eu est rhoncus auctor. Sed in mattis elit, ut sollicitudin urna.
+
+Aenean ex arcu, commodo a lorem ut, imperdiet porttitor metus. Nam vel iaculis arcu. Nulla sed odio sem. Suspendisse vestibulum ex id turpis vulputate hendrerit. Morbi hendrerit ultricies purus quis blandit. Praesent commodo tellus sed metus rutrum accumsan. Maecenas ut enim odio. Donec eget feugiat dui, eget congue lorem.
+
+Quisque ultricies orci eget ullamcorper pharetra. Pellentesque blandit nisi quis elit tempor, id fermentum odio egestas. Aliquam dictum eu ante eu auctor. Sed in nibh quam. Nullam at felis convallis, laoreet augue at, dignissim purus. Sed posuere feugiat leo, vel ultricies risus elementum eget. Nulla ut placerat dui, vel semper enim. Aenean a ex auctor, feugiat sapien a, bibendum nisi. Praesent egestas libero nisl, non elementum ex tincidunt eu. Fusce bibendum diam nec ipsum dapibus eleifend."/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,5 +1,6 @@
 package com.youdude.kotlinandroidtutorialsample
 
+import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -50,10 +51,10 @@ class MyFeedRecyclerViewAdapter(
     inner class ViewHolder(val mView: View) : RecyclerView.ViewHolder(mView) {
 
         fun bind(item: DummyItem) = with(mView){
-            item_number.text = item.id
-            content.text = item.content
             this.setOnClickListener {
-                it.findNavController().navigate(R.id.action_feedFragment_to_detailFragment)
+                var data = Bundle()
+                data.putString(VIDEO_ID, item.id)
+                it.findNavController().navigate(R.id.action_feedFragment_to_detailFragment, data)
             }
         }
     }
